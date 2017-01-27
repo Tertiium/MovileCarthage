@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaPersonalizada" id="gTV-IL-0wX" customClass="SerieCollectionViewCell" customModule="MovileCarthage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wVZ-Sl-MLt">
+                        <rect key="frame" x="5" y="5" width="90" height="129"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUJ-Y9-9CX">
+                        <rect key="frame" x="5" y="134" width="90" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="61" id="Gsh-LS-rof"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bUJ-Y9-9CX" secondAttribute="trailing" constant="5" id="67j-Nl-IHx"/>
+                <constraint firstAttribute="trailing" secondItem="wVZ-Sl-MLt" secondAttribute="trailing" constant="5" id="D7d-2Y-8UH"/>
+                <constraint firstItem="wVZ-Sl-MLt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="FtS-su-EWq"/>
+                <constraint firstItem="bUJ-Y9-9CX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Vd0-Et-824"/>
+                <constraint firstItem="bUJ-Y9-9CX" firstAttribute="top" secondItem="wVZ-Sl-MLt" secondAttribute="bottom" id="Vhz-hN-nCc"/>
+                <constraint firstItem="wVZ-Sl-MLt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="gQ2-zi-IG8"/>
+                <constraint firstAttribute="bottom" secondItem="bUJ-Y9-9CX" secondAttribute="bottom" constant="5" id="vNZ-O5-rgk"/>
+            </constraints>
+            <size key="customSize" width="91" height="144"/>
+            <connections>
+                <outlet property="imageViewSerie" destination="wVZ-Sl-MLt" id="7cN-NT-cfX"/>
+                <outlet property="labelSerie" destination="bUJ-Y9-9CX" id="0os-vg-Pmd"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="39"/>
+        </collectionViewCell>
+    </objects>
+</document>
